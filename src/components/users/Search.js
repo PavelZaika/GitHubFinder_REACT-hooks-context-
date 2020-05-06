@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-
 import GithubContext from '../../context/github/githubContext';
 import AlertContext from '../../context/alert/alertContext';
 
@@ -9,7 +8,7 @@ const Search = () => {
 
   const { setAlert } = alertContext;
 
-  const { searchUsers, clearUsers } = GithubContext;
+  const { searchUsers, clearUsers } = githubContext;
 
   const [text, setText] = useState('');
 
